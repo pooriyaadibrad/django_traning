@@ -8,7 +8,7 @@ def index(request):
 def data(request):
      user=models.User(Email="adibradp@gmail.com",Password="poo123456789")
      user.save()
-     return render(request=request, template_name='data.html',context={})
+     return render(request=request, template_name='data.html')
 
 
 def datatable(request):
