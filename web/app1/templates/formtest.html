@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{% include 'bootLink.html' %}
+
+</head>
+<body>
+    <form method="post" action="/app1/saveData/">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Register</button>
+        <a href="/app1/datatable">دیتا های جدول</a>
+    </form>
+
+</body>
+</html>
